@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Gratis</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Video Gratis</h1>
-    <input type="text" id="search" placeholder="Cari video...">
-  </header>
-  <main id="video-container">
-    <div class="video-item">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-      <p>Contoh Video YouTube</p>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<header>
+  <h1>Livestreamcrt</h1>
+  <input type="text" id="search" placeholder="Cari video...">
+  <div id="categories">
+    <button onclick="filterCategory('all')">Semua</button>
+    <button onclick="filterCategory('musik')">Musik</button>
+    <button onclick="filterCategory('olahraga')">Olahraga</button>
+  </div>
+</header>
+<main id="video-container">
+  <div class="video-item" data-category="musik">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <p>Video Musik</p>
+  </div>
+  <div class="video-item" data-category="olahraga">
+    <iframe src="https://www.youtube.com/embed/IUN664s7N-c" allowfullscreen></iframe>
+    <p>Video Olahraga</p>
+  </div>
+</main>
